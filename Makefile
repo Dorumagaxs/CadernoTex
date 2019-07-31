@@ -1,12 +1,12 @@
 build:
-	pdflatex main
-	pdflatex main
-	# biber main
-	# pdflatex main
+	if [ ! -d bin/ ]; then mkdir bin; fi
+	pdflatex --output-directory=bin/ main
+	pdflatex --output-directory=bin/ main
+#	biber -input-directory=bin/ -output-directory=bin/ main
+#	pdflatex --output-directory=bin/ main
 
-view: build
-	chrome main.pdf
+view:
+	zathura bin/main.pdf
 
 clean:
-	rm main.aux main.log main.toc main.out
-	echo "Diretório limpo!"
+	rm -r bin/
