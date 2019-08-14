@@ -12,6 +12,7 @@
 \usepackage{titlesec}
 \usepackage{tocloft}
 \usepackage{pifont}
+\usepackage[brazilian]{babel}
 %\usepackage[backend=biber]{biblatex}
 
 \usepackage{lipsum}
@@ -62,11 +63,11 @@
 \fancyhead[CH]{\unidadetitle}
 \renewcommand{\headrulewidth}{.5pt}
 
-\renewcommand{\contentsname}{
+\addto\captionsbrazilian{\renewcommand{\contentsname}{
 	\begin{center}
 		{\LARGE\textbf{SUMÁRIO}}
 	\end{center}
-}
+}}
 
 \titleformat{\section}[block]
 {\centering\LARGE\bfseries}

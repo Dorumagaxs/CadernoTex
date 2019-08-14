@@ -6,7 +6,7 @@ build:
 #	pdflatex --output-directory=bin/ main
 
 view:
-	zathura bin/main.pdf
+	zathura bin/main.pdf &
 
 clean:
 	rm -r bin/
