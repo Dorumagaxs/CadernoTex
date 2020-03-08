@@ -32,7 +32,9 @@
 \usepackage{tocloft}
 \usepackage{pifont}
 \usepackage[brazilian]{babel}
-%\usepackage[backend=biber]{biblatex}
+%\usepackage[backend=biber,style=abnt]{biblatex}
+
+%\addbibresource{bibliografia.bib}
 
 \usepackage{lipsum}
 
@@ -115,4 +117,15 @@
     \unidade{Unidade}
         \materia{Materia}
             \lipsum
+
+%	\nocite{*}
+%	\defbibheading{titulo}{
+%		\begin{center}
+%			{\large\bfseries\uppercase{Referências}}
+%		\end{center}
+%		\vspace{2.5ex}
+%	}
+%	\newpage
+%	\pagestyle{empty}
+%	\printbibliography[heading=titulo]
 \end{document}
