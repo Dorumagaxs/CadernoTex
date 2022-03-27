@@ -18,7 +18,9 @@
 \usepackage{lipsum}
 
 \renewcommand{\roman}[1]{\MakeUppercase{\romannumeral #1}}
-\newcommand{\enquote}[1]{{``#1"}}
+\renewcommand{\o}{\textsuperscript{\underline{o}}}
+\renewcommand{\a}{\textsuperscript{\underline{a}}}
+\newcommand{\aspas}[1]{{``#1"}}
 
 \newcommand{\capa}[3]{
 	\begin{center}
@@ -95,5 +97,5 @@
 
 	\unidade{Unidade}
 		\materia{Materia}
-			\lipsum
+			\input{materias/1/a}
 \end{document}

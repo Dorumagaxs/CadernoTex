@@ -10,4 +10,4 @@ view: build
 	zathura bin/main.pdf &
 
 clean:
-	rm -r bin/
+	if [ -d bin/ ]; then rm -r bin/; fi
